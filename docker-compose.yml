@@ -1,0 +1,18 @@
+services:
+  db:
+    container_name: mysql-container-new
+    image: mysql:latest
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: exl
+
+  jupyterlab:
+    image: jupyter/datascience-notebook  # Use your Jupyter image
+    container_name: batch2_ayush2
+    ports:
+      - "8888:8888"
+    volumes:
+      - "E:/EXL Training/Capstone Project/EXL Project:/home/jovyan/work"  # Mount your local path
+    command: start.sh jupyter lab
