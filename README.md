@@ -43,7 +43,7 @@ For more information on the dataset, you can refer to the original dataset sourc
 ## 5. How to Run the App
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Shraman-jain/exl_project_team_2.git
+   git clone https://github.com/shadmaan9216/Capstone_EXL.git
    ```
 2. Navigate to the project directory:
    ```bash
